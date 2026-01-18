@@ -1,0 +1,86 @@
+body {
+  background: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+  font-size: 42px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* FORMULÁRIO */
+.formulario {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+input, select {
+  font-size: 22px;
+  padding: 12px;
+  min-width: 220px;
+}
+
+button {
+  font-size: 22px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+/* BOTÃO GERAR */
+.calcular {
+  font-size: 28px;
+  width: 100%;
+  margin: 25px 0;
+  padding: 16px;
+}
+
+/* LISTA DE PRODUTOS */
+#lista .item {
+  border-bottom: 3px solid black;
+  padding: 14px 0;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.item button {
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 8px 14px;
+}
+
+/* RESULTADO / PALETIZAÇÃO */
+#resultado {
+  font-size: 26px;              /* 🔥 TEXTO GRANDE */
+  line-height: 1.6;
+  white-space: pre-wrap;
+  border-top: 5px solid black;
+  padding-top: 25px;
+  margin-top: 30px;
+}
+
+/* DEIXA CAMADAS MAIS VISUAIS */
+#resultado::selection {
+  background: black;
+  color: white;
+}
+
+/* AJUSTE EXTRA PARA TELAS PEQUENAS */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  #resultado {
+    font-size: 28px;           /* 🔥 ainda maior no celular */
+  }
+
+  #lista .item {
+    font-size: 24px;
+  }
+}
